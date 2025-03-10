@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Street Workout Links</title>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         body {
-            background: url('https://source.unsplash.com/1600x900/?street,graffiti,workout') no-repeat center center/cover;
+            background: url('https://source.unsplash.com/1600x900/?calisthenics,workout') no-repeat center center/cover;
             text-align: center;
             font-family: Arial, sans-serif;
             color: white;
@@ -16,19 +16,23 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
+            margin: 0;
+            padding: 0;
         }
         .container {
-            backdrop-filter: blur(5px);
-            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(8px);
+            background: rgba(0, 0, 0, 0.7);
             padding: 20px;
             border-radius: 15px;
+            width: 90%;
+            max-width: 400px;
         }
         .link-box {
-            width: 300px;
+            width: 100%;
             padding: 15px;
-            margin: 15px;
+            margin: 10px 0;
             border-radius: 10px;
-            font-size: 20px;
+            font-size: 18px;
             font-weight: bold;
             display: flex;
             align-items: center;
@@ -40,24 +44,24 @@
         .whatsapp { background: #25D366; }
         .maps { background: #4285F4; }
         .contest { background: #FF3B30; }
-        .link-box i { margin-right: 10px; }
+        .link-box i { margin-right: 10px; font-size: 22px; }
         .link-box:hover { opacity: 0.8; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Join the Street Workout Movement!</h1>
+        <h1>Hai în Street Workout!</h1>
         
-        <a href="https://wa.me/YOUR_NUMBER" class="link-box whatsapp">
-            <i class="fab fa-whatsapp"></i> WhatsApp Group
+        <a href="https://chat.whatsapp.com/KJWvlz8Ck1fEWoHnvJN5fb" class="link-box whatsapp">
+            <i class="fab fa-whatsapp"></i> Grup Whatsapp
         </a>
         
-        <a href="https://maps.google.com?q=YOUR_LOCATION" class="link-box maps">
-            <i class="fas fa-map-marker-alt"></i> Google Maps Location
+        <a href="https://maps.app.goo.gl/uSVhRSzLafpigkPD6" class="link-box maps">
+            <i class="fas fa-map-marker-alt"></i> Locație antrenamente
         </a>
         
-        <a href="https://yourformlink.com" class="link-box contest">
-            <i class="fas fa-clipboard-list"></i> Join the Contest
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXLe60CH5LL55JWHtHUJpMURyi9PdegoqMsVvcnp7TMh6czQ/viewform?usp=header" class="link-box contest">
+            <i class="fas fa-clipboard-list"></i> Concurs 24 mai 2025
         </a>
     </div>
 </body>
