@@ -1,108 +1,73 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Street Workout Profile</title>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Bio Links</title>
     <style>
         body {
-            background: url('https://source.unsplash.com/1600x900/?calisthenics,workout') no-repeat center center/cover;
-            text-align: center;
             font-family: Arial, sans-serif;
+            background-color: #0D0D0D;
             color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            backdrop-filter: blur(8px);
-            background: rgba(0, 0, 0, 0.85);
-            padding: 20px;
-            border-radius: 15px;
-            width: 90%;
-            max-width: 400px;
             text-align: center;
+            padding: 20px;
         }
-        .profile-pic {
+        .profile {
+            max-width: 400px;
+            margin: auto;
+            background: #181818;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+        .profile img {
             width: 100px;
-            height: 100px;
             border-radius: 50%;
-            object-fit: cover;
             border: 3px solid white;
-            margin-bottom: 10px;
         }
-        h1, h2 {
-            margin: 5px 0;
-        }
-        .description {
-            font-size: 14px;
-            margin-bottom: 15px;
-        }
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 15px;
+        .profile h2 {
+            margin: 10px 0;
         }
         .social-icons a {
-            color: white;
-            font-size: 20px;
+            display: inline-block;
+            margin: 10px;
+            font-size: 24px;
             text-decoration: none;
-            transition: 0.3s;
+            color: white;
         }
-        .social-icons a:hover {
-            opacity: 0.7;
-        }
-        .link-box {
-            width: 100%;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 10px;
-            font-size: 18px;
+        .links a {
+            display: block;
+            background: #333;
+            color: white;
+            padding: 10px;
+            margin: 10px auto;
+            width: 80%;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
             font-weight: bold;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            color: white;
-            transition: 0.3s;
         }
-        .whatsapp { background: #25D366; }
-        .maps { background: #4285F4; }
-        .contest { background: #FF3B30; }
-        .link-box i { margin-right: 10px; font-size: 22px; }
-        .link-box:hover { opacity: 0.8; }
+        .links a:hover {
+            background: #444;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="https://source.unsplash.com/100x100/?person,portrait" alt="Profile Picture" class="profile-pic">
-        <h1>Numele Tău</h1>
-        <h2><i class="fas fa-map-marker-alt"></i> Orașul Tău</h2>
-        <p class="description">Salut! Sunt pasionat de street workout și vreau să creez o comunitate puternică!</p>
-        
+    <div class="profile">
+        <img src="profile.jpg" alt="Profile Picture">
+        <h2>Mackenly Jones</h2>
+        <p><i>Tennessee, USA</i></p>
+        <p>Hi! I'm an interactive developer currently perfecting my craft.</p>
         <div class="social-icons">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#">🔴</a>
+            <a href="#">🔵</a>
+            <a href="#">🔗</a>
+            <a href="#">⚫</a>
         </div>
-        
-        <a href="https://chat.whatsapp.com/KJWvlz8Ck1fEWoHnvJN5fb" class="link-box whatsapp">
-            <i class="fab fa-whatsapp"></i> Grup Whatsapp
-        </a>
-        
-        <a href="https://maps.app.goo.gl/uSVhRSzLafpigkPD6" class="link-box maps">
-            <i class="fas fa-map-marker-alt"></i> Locație antrenamente
-        </a>
-        
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXLe60CH5LL55JWHtHUJpMURyi9PdegoqMsVvcnp7TMh6czQ/viewform?usp=header" class="link-box contest">
-            <i class="fas fa-clipboard-list"></i> Concurs 24 mai 2025
-        </a>
+        <div class="links">
+            <a href="#">📌 The Church Factory</a>
+            <a href="#">📌 Tricities Media Group</a>
+        </div>
     </div>
 </body>
 </html>
