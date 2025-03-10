@@ -3,16 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Links</title>
+    <title>Street Workout Links</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
-        body { text-align: center; font-family: Arial, sans-serif; margin-top: 50px; }
-        a { display: block; margin: 15px; font-size: 20px; text-decoration: none; color: blue; }
+        body {
+            background: url('https://source.unsplash.com/1600x900/?street,graffiti,workout') no-repeat center center/cover;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            backdrop-filter: blur(5px);
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 15px;
+        }
+        .link-box {
+            width: 300px;
+            padding: 15px;
+            margin: 15px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+        .whatsapp { background: #25D366; }
+        .maps { background: #4285F4; }
+        .contest { background: #FF3B30; }
+        .link-box i { margin-right: 10px; }
+        .link-box:hover { opacity: 0.8; }
     </style>
 </head>
 <body>
-    <h1>My Favorite Links</h1>
-    <a href="https://link1.com">Link 1</a>
-    <a href="https://link2.com">Link 2</a>
-    <a href="https://link3.com">Link 3</a>
+    <div class="container">
+        <h1>Join the Street Workout Movement!</h1>
+        
+        <a href="https://wa.me/YOUR_NUMBER" class="link-box whatsapp">
+            <i class="fab fa-whatsapp"></i> WhatsApp Group
+        </a>
+        
+        <a href="https://maps.google.com?q=YOUR_LOCATION" class="link-box maps">
+            <i class="fas fa-map-marker-alt"></i> Google Maps Location
+        </a>
+        
+        <a href="https://yourformlink.com" class="link-box contest">
+            <i class="fas fa-clipboard-list"></i> Join the Contest
+        </a>
+    </div>
 </body>
 </html>
